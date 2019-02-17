@@ -3,6 +3,7 @@
 - もし今回当番の人が不在だった場合はその次の当番を教える。
 - 会議じゃなくても当番制があり、ほぼ固定メンバーが参加するイベントなどで使えそう。
 - 社内向けスキルのため公開はしていない。
+- [The Alexa Skills Kit SDK for Python](https://github.com/alexa/alexa-skills-kit-sdk-for-python)で開発。
 
 # メモなど
 - 会議参加者は毎回固定なので全員を登録したスロットを作成した。
