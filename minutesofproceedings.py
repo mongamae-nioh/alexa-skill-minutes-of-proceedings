@@ -15,9 +15,9 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # 担当者タプル（担当者全員を記載）
-pictaple = ('担当者1',
-            '担当者2',
-            '担当者3'
+pictaple = ('さとう,
+            'たなか',
+            'すずき'
             )
 
 # タプル要素数
