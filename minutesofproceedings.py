@@ -73,7 +73,7 @@ class YesIntentHandler(AbstractRequestHandler):
         if session_attr['pic'] is None:
             speech_text = "前回、議事録を書いたかたのお名前を教えてください"
 
-        speech_text = "{}さん、よろしくお願いします".format(session_attr['pic'])
+        speech_text = '{}さん、<say-as interpret-as="interjection">よろしくお願いします</say-as>'.format(session_attr['pic'])
 
         handler_input.response_builder.speak(speech_text).ask(speech_text).set_should_end_session(True)
         return handler_input.response_builder.response
