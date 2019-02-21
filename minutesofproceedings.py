@@ -58,7 +58,7 @@ class DecidePICIntentHandler(AbstractRequestHandler):
         session_attr['pic'] = thistime_is
         session_attr['pic_number'] = pictaple.index(thistime_is)
 
-        speech_text = "今回は{}さんです。いらっしゃいますか？".format(thistime_is)
+        speech_text = "今回は、{}さんです。いらっしゃいますか？".format(thistime_is)
 
         handler_input.response_builder.speak(speech_text).ask(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
