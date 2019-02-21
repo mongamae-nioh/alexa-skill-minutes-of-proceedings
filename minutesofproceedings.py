@@ -101,7 +101,7 @@ class NoIntentHandler(AbstractRequestHandler):
         if session_attr['pic'] is None:
             speech_text = "前回、議事録を書いたかたのお名前を教えてください"
 
-        speech_text = "次は{}さんです。いらっしゃいますか？".format(thistime_is)
+        speech_text = "次は、{}さんです。いらっしゃいますか？".format(thistime_is)
 
         handler_input.response_builder.speak(speech_text).ask(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
@@ -130,7 +130,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speech_text = "いつでも呼んでください"
 
-        handler_input.response_builder.speak(speech_text).ask(speech_text)
+        handler_input.response_builder.speak(speech_text).ask(speech_text).set_should_end_session(True)
         return handler_input.response_builder.response
         
 class AllExceptionHandler(AbstractExceptionHandler):
